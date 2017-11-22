@@ -1,0 +1,12 @@
+test/
+tmp/
+coverage/
+*.log
+.travis.yml
+gulpfile.js
+.idea/
+appveyor.yml
+.deploy_git/
+node_modules/
+public/
+deployer.test.js
