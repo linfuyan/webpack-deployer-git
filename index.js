@@ -9,11 +9,11 @@
 
 var deployer = require('./lib/deployer');
 
-function WebpackGitSync(options) {
+function WebpackDeployerGit(options) {
     this.options = options;
 }
 
-WebpackGitSync.prototype.apply = function (compiler) {
+WebpackDeployerGit.prototype.apply = function (compiler) {
 
     var self = this;
 
