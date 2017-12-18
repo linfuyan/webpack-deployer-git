@@ -1,6 +1,6 @@
 {
   "name": "webpack-deployer-git",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack plugin which deploys dist to git repository",
   "main": "index.js",
   "dependencies": {
