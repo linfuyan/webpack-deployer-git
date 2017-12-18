@@ -17,11 +17,13 @@ WebpackDeployerGit.prototype.apply = function (compiler) {
 
     var self = this;
 
-    compiler.plugin('after-emit', function (compilation) {
+    compiler.plugin('after-emit', function (compilation, callback) {
 
         console.log(self.options);
         deployer(self.options);
-
+        if(callback && typeof callback === 'function'){
+            callback();
+        }
     });
 };
 
